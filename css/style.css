@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #000000;
+}
+table{
+
+}
+.calc{
+    width: 370px;
+    margin: 100px auto;
+    border: 1px solid white;
+    overflow: hidden;
+}
+h1.display{
+    color: #fff;
+    font-size: 80px;
+    text-align: right;
+    height: 90px;
+
+}
+
+.key{
+    background-color: #333333;
+    color: white;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 35px;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;/*select cancel*/
+    
+}
+.key:active{
+    background-color: #33333390;
+}/*အသက်ဝင် နှိပ်တဲ့effect create transparent add 90*/
+tr:first-child .key{
+    background-color: #a5a5a5;
+    color: #000;
+}
+tr:first-child .key:active{
+    background-color: #a5a5a590;
+}
+tr td:last-child .key{
+    background-color: #ffa45c;
+    color: #fff;
+}
+tr td:last-child .key:active{
+    background-color: #ffa45c90;
+}
+.twoplace{
+    width: 170px;
+    border-radius: 90px;
+}
